@@ -134,6 +134,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 datePickerDialog.show();
                 break;
             case R.id.main_search_imgv:
+                calendar = Calendar.getInstance();
                 int hour = calendar.get(Calendar.HOUR);
                 int minute = calendar.get(Calendar.MINUTE);
                 TimePickerDialog timePickerDialog = new TimePickerDialog(MainActivity.this, new TimePickerDialog.OnTimeSetListener() {
