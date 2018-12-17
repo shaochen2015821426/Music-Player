@@ -37,7 +37,7 @@ import com.master.permissionhelper.PermissionHelper;
 import java.util.List;
 
 /**
- * A simple {@link Fragment} subclass.
+ * A simple {@link Fragment} subclass
  */
 
 public class LogicFragment extends Fragment {
