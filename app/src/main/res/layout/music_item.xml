@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <View
+        android:id="@+id/musicitem_playing_v"
+        android:layout_width="3dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        android:background="@color/colorAccent"
+        />
+
+    <ImageView
+        android:id="@+id/musicitem_album_imgv"
+        android:layout_marginLeft="3dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/musicitem_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/musicitem_album_imgv"
+        android:textSize="20dp"
+        android:text="成都"/>
+    <TextView
+        android:id="@+id/musicitem_artist_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/musicitem_album_imgv"
+        android:layout_below="@+id/musicitem_title_tv"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="bottom"
+        android:text="赵雷"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_music_list_icon_more" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:layout_toRightOf="@+id/musicitem_album_imgv"
+        android:background="#cccccc"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

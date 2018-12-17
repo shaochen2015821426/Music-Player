@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/dialog_item_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入账号" />
+
+    <EditText
+        android:id="@+id/dialog_item_password_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入密码"
+        android:inputType="textPassword" />
+
+</LinearLayout>

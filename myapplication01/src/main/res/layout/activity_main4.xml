@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.Main4Activity">
+
+    <Button
+        android:id="@+id/main4_into_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="点我点我点我"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/main4_date_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="获取日期"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/main4_time_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="获取时间"
+        android:textSize="30sp"/>
+
+</LinearLayout>

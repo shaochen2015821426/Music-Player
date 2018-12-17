@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/nf_album_imgv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/touxiang1" />
+
+        <TextView
+            android:id="@+id/nf_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/nf_pause_imgv"
+            android:layout_toRightOf="@+id/nf_album_imgv"
+            android:text="告白气球"
+            android:layout_marginTop="5dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/nf_artist_tv"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/nf_title_tv"
+            android:layout_toLeftOf="@id/nf_pause_imgv"
+            android:layout_toRightOf="@+id/nf_album_imgv"
+            android:text="周杰伦"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/nf_pause_imgv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70dp"
+            android:src="@mipmap/ic_play_bar_btn_pause" />
+
+        <ImageView
+            android:id="@+id/nf_next_imgv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_play_bar_btn_next" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

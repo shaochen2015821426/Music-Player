@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="275dp"
+            android:layout_height="169dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/ic_launcher">
+
+            <TextView
+                android:id="@+id/tv_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="提示"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="45dp"
+                android:background="#25b3ff" />
+
+            <TextView
+                android:id="@+id/tv_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="你确定要删除吗"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/view_liner"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_no"
+                android:layout_marginTop="25dp"
+                android:background="#e1e1e1" />
+
+            <LinearLayout
+                android:id="@+id/tv_cancel"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/view1"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/tv_prompt">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#25b3ff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="1.5dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/view_liner"
+                android:layout_centerInParent="true"
+                android:background="#e1e1e1" />
+
+            <LinearLayout
+                android:id="@+id/tv_ok"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/view1"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tv_prompt">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="#25b3ff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplicationexercise.AnimitorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/animitor_start_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="开始"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/animitor_pause_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="暂停"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/animitor_resumn_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="继续"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/animitor_iv"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/musci"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

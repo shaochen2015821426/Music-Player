@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplicationexercise">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MusicListActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BackDemoActivity" />
+        <activity android:name=".NotificationDemoActivity" />
+        <activity android:name=".DialogDemoActivity" />
+        <activity android:name=".FragmentDemoActivity" />
+        <activity android:name=".AnimitorActivity" />
+        <activity android:name=".PlayMusicActivity">
+
+        </activity>
+        <activity
+            android:name=".AActivity"
+            android:launchMode="singleTask">
+
+        </activity>
+        <activity android:name=".BActivity"></activity>
+    </application>
+
+</manifest>

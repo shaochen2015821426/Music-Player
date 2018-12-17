@@ -1,0 +1,298 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shaoyangyang.shaoshuaih.fragment.OnlineFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/afrag_list_relayout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/bfrag_list_imgv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_online_music_list_profile_headline" />
+
+            <TextView
+                android:id="@+id/bfrag_listname_tv"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/bfrag_list_imgv"
+                android:text="主打榜单"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bfrag_listbutton_linlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/hotmusic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="1"
+                       android:textSize="18dp"
+                       android:textColor="#000000"
+                       android:text="1、半壶纱-刘珂唉"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:text="2、演员-薛之谦"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:text="3、寂寞的人伤心的歌-龙梅子"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2">
+                <View
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:background="#cccccc"
+                    android:layout_marginLeft="130dp"
+                    android:layout_height="2dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/newmusic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:text="1、再见-邓紫棋"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:text="2、被风吹散的人们-陈洁仪"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:text="3、世界上最难唱的歌-包贝尔"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/afrag_list_relayout2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/bfrag_list_imgv2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_online_music_list_profile_headline" />
+
+            <TextView
+                android:id="@+id/bfrag_listname_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/bfrag_list_imgv2"
+                android:text="分类榜单"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:background="#cccccc"
+                android:layout_marginLeft="130dp"
+                android:layout_height="2dp"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bfrag_listbutton_linlayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/chinamusic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:text="1、半壶纱-刘珂唉"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:text="2、演员-薛之谦"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:text="3、寂寞的人伤心的歌-龙梅子"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2">
+
+                <View
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:background="#cccccc"
+                    android:layout_marginLeft="130dp"
+                    android:layout_height="2dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/foreignmusic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <ListView
+                        android:id="@+id/bfrag_list_lv4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

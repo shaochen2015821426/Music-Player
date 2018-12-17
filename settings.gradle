@@ -1,0 +1,1 @@
+include ':app', ':shaoshuai', ':myapplication01', ':myapplicationexercise', ':app02'

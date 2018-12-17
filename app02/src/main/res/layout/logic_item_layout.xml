@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/logic_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/logic_album_bitmap"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/touxiang1"
+            android:layout_margin="3dp"/>
+
+        <ImageView
+            android:id="@+id/logic_more"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/ic_music_list_icon_more"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/logic_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="我想，我想"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/logic_album_bitmap"
+            android:layout_toLeftOf="@+id/logic_more"/>
+
+        <TextView
+            android:id="@+id/logic_album"
+            android:layout_below="@+id/logic_title"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="洪启-我想，我想！"
+            android:layout_marginLeft="25dp"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/logic_album_bitmap"
+            android:layout_toLeftOf="@+id/logic_more"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
