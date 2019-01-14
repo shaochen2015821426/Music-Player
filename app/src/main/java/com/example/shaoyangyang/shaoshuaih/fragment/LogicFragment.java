@@ -26,6 +26,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.RemoteViews;
+import android.widget.Toast;
 
 import com.example.shaoyangyang.shaoshuaih.MusicActivity;
 import com.example.shaoyangyang.shaoshuaih.R;
@@ -150,7 +151,7 @@ public class LogicFragment extends Fragment {
         //获取ContentResolver的对象，并进行实例化
         ContentResolver resolver = getActivity().getContentResolver();
         //获取游标
-        Cursor cursor = resolver.query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, null, null, null, null); //创建游标MediaStore.Audio.Media.EXTERNAL_CONTENT_URI获取音频的文件，后面的是关于select筛选条件，这里填土null就可以了
+        Cursor cursor = resolver.query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, null, null, null, MediaStore.Audio.Media.DEFAULT_SORT_ORDER); //创建游标MediaStore.Audio.Media.EXTERNAL_CONTENT_URI获取音频的文件，后面的是关于select筛选条件，这里填土null就可以了
         //游标归零
         if(cursor.moveToFirst()){
             do {
@@ -170,8 +171,9 @@ public class LogicFragment extends Fragment {
                 music.albumBip = getAlbumArt(albumID);
                 //将music放入musicList集合中
                 Common.musicList.add(music);
-            }
-            while (cursor.moveToNext());
+            }  while (cursor.moveToNext());
+        }else {
+            Toast.makeText(getActivity(), "本地没有音乐哦", Toast.LENGTH_SHORT).show();
         }
         cursor.close();                                                                         //关闭游标
     }
